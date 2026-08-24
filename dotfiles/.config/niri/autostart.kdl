@@ -1,0 +1,6 @@
+spawn-at-startup "udiskie"
+spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
+spawn-at-startup "noctalia"
+spawn-at-startup "wayscriber" "--daemon"
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+

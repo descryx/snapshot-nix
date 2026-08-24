@@ -1,0 +1,33 @@
+[Audio]
+levelMetersFpsCap=239
+
+[Presets]
+lastLoadedOutputPreset=main_nix_audio_headphones
+
+[Spectrum]
+spectrumFpsCap=240
+spectrumShape=lines
+
+[StreamInputs]
+inputDevice=alsa_input.usb-HP__Inc_HyperX_QuadCast_4111-00.analog-stereo
+mostUsedPresets=mic main\s
+plugins=rnnoise#0,equalizer#0,compressor#0,autogain#0,gate#0,limiter#0
+usedPresets=mic main :45
+visiblePage=pluginsPage
+visiblePlugin=limiter#0
+
+[StreamOutputs]
+blocklist=SDL Application:SDL Application
+blocklistUsesMediaName=true
+mostUsedPresets=main_nix_audio_headphones,monitor
+outputDevice=alsa_output.pci-0000_01_00.1.pro-output-3
+plugins=equalizer#0,convolver#0,bass_enhancer#0,bass_loudness#0
+showBlocklistedApps=true
+usedPresets=main_nix_audio_headphones:26,monitor:16
+visiblePage=pluginsPage
+visiblePlugin=equalizer#0
+
+[Window]
+height=1058
+visiblePresetSheetPage=autoloadingPage
+width=1916

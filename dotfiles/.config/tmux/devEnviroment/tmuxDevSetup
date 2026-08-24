@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Define your project root path
+TARGET_DIR="$HOME/Projects/cpp"
+
+# Kill old sessions to prevent caching old layouts
+tmux kill-session -t devEnv 2>/dev/null
+
+# 1. Grab your current active terminal window size
+REAL_WIDTH=$(tput cols)
+REAL_HEIGHT=$(tput lines)
+
+# 2. Start the server completely detached (-d) inside your project directory
+tmux new-session -d -s devEnv -n code -x "$REAL_WIDTH" -y "$REAL_HEIGHT" -c "$TARGET_DIR"
+
+# 3. Cut exactly 25% width off your window layout (Now runs successfully)
+tmux split-window -h -l 25% -t devEnv:code -c "$TARGET_DIR"
+
+# 4. Open the secondary tab window tracking modules
+tmux new-window -t devEnv -n git -c "$TARGET_DIR"
+
+# 5. FORCE FOCUS BACK TO THE "CODE" WINDOW
+tmux select-window -t devEnv:code
+
+# 6. Force focus back to the big left window (pane index 0)
+tmux select-pane -t devEnv:code.1
+
+# 7. FINALLY attach to the session now that the layout is built
+tmux attach-session -t devEnv
+Env

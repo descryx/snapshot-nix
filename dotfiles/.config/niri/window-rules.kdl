@@ -1,0 +1,116 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Window-Rules
+window-rule {
+    match is-active=false
+    opacity 0.95
+}
+
+ // window-rule {
+ //   open-maximized true
+ // }
+
+window-rule {
+    match app-id=r#"zen$"# title="^Picture-in-Picture$"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 720; }
+    max-width 1280
+    max-height 720
+
+}
+
+// Example: block out two password managers from screen capture.
+// (This example rule is commented out with a "/-" in front.)
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screen-capture"
+
+    // Use this instead if you want them visible on third-party screenshot tools.
+    // block-out-from "screencast"
+}
+
+// Fix VRR flickering when running games through gamescope.
+// Forces fixed-sync (no VRR) inside the gamescope compositor window.
+window-rule {
+    match app-id="gamescope"
+    variable-refresh-rate false
+}
+
+
+window-rule {
+    geometry-corner-radius 2
+    clip-to-geometry true
+}
+
+window-rule {
+  draw-border-with-background false
+}
+
+window-rule {
+    match app-id="ghostty"
+    default-column-width {proportion 0.5;}
+    opacity 1.0
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+window-rule {
+    match app-id="^steam$"
+    exclude title="^Steam$"
+    default-column-width {proportion 0.75;}
+    open-floating true
+}
+
+window-rule {
+    match app-id="chrome"
+    default-column-width {proportion 0.75;}
+}
+// window-rule { //NOTE: does not work idk why tho.
+//     match app-id="^obsidian$"
+//     default-column-width {proportion 0.75;}
+// }
+
+// Float PrismLauncher's secondary dialogs; keep the main launcher window tiled normally.
+// window-rule {
+//     match app-id=r#"^org\.prismlauncher\.PrismLauncher$"#
+//     exclude title="^PrismLauncher$"
+//     open-floating true
+// }
+
+window-rule {
+    match app-id=r#"zen$"#
+    // open-maximized true
+    // default-column-width {proportion 0.75;}
+    opacity 1.0
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+
+window-rule {
+    match app-id="imv"
+    open-floating true
+    default-column-width { fixed 1280; }
+    default-window-height { fixed 720; }
+    max-width 1280
+    max-height 720
+}

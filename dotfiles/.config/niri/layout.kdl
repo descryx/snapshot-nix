@@ -1,0 +1,49 @@
+layout {
+
+    // gaps 10
+    gaps 2
+
+    center-focused-column "never"
+    default-column-display "normal"
+
+    preset-column-widths {
+        proportion 0.25
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 0.75
+    }
+
+    tab-indicator {
+      place-within-column true
+      width 2
+    }
+
+    default-column-width { proportion 1.0; }
+
+    focus-ring{
+      on
+        width 1
+    }
+
+    border {
+        off
+        width 1
+        active-color "#bb0000"
+        inactive-color "#000000"
+        urgent-color "#9b0000"
+    }
+
+}
+
+overview {
+    zoom 0.35
+}
+
+blur {
+    // High values can impact GPU performance.
+    passes 1
+
+    // Higher offset = more spread out, stronger blur. Default is 3.0.
+    offset 1.5
+}
