@@ -81,6 +81,9 @@ Syncthing is configured (in `hosts/*/wallpapers-*.nix`) to automatically sync `P
 - **Use it as reference and inspiration.**
 
 
+MIT Licence covers only the nix config!
+Not the assets.
+
 ## Credits
 
 - [fastfetch pic](https://x.com/maoxianxiaotao/status/2033224745957929219)
