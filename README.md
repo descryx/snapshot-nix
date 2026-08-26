@@ -14,7 +14,7 @@
 <details>
   <summary><b>Click to expand</b></summary>
   <br>
-<video src="https://github.com/user-attachments/assets/ccbc541b-0e60-437a-b24a-80c1de2ce78b" controls></video>
+<video src="https://github.com/user-attachments/assets/d62a509f-a63f-42cc-a48d-36d1f052f5c5" controls></video>
 </details>
 
 ---
