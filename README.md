@@ -17,14 +17,14 @@
 
 A quick tour of what's inside: 
 
-- **Noctalia v5**     — Various plugins, keymap cheatsheet accessible via `mod + F1`. Note, telemetry is enabled for noctalia
-- **Font** Cascadia Code
-- **Neovim**       — LazyVim base with a custom colorscheme.
-- **Syncthing**    — Auto-syncs `Pictures` and `Videos` between machines.
-- **Terminal**     - Ghostty
+- **Noctalia v5** - Various plugins, keymap cheatsheet accessible via `mod + F1`. Note, telemetry is enabled for noctalia
+- **Font** - Cascadia Code
+- **Neovim** - LazyVim base with a custom colorscheme.
+- **Syncthing** - Auto-syncs `Pictures` and `Videos` between machines.
+- **Terminal** - Ghostty
 - **File manager** - Yazi
-- **Browser**      - Zen
-- **Notes**        - Obsidian
+- **Browser** - Zen
+- **Notes** - Obsidian
 
 > Note
 - **Vesktop**: Small things configured eg. plugins, themes, etc.
@@ -89,7 +89,6 @@ Not the assets.
 - [fastfetch pic](https://x.com/maoxianxiaotao/status/2033224745957929219)
 - [fastfetch based on this](https://www.reddit.com/r/NixOS/comments/1tt2qww/fastfetchconfig/)
 - [sddm wallpapers](https://x.com/zhamaooooooo/status/1970472008111853611)
-- [bg](https://wallhaven.cc/w/p9kdlp)
 - [Wayscriber](https://github.com/devmobasa/wayscriber)
 - [Syncting](https://syncthing.net/)
 - [Niri Animations](https://github.com/jgarza9788/niri-animation-collection)
