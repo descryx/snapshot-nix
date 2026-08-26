@@ -11,6 +11,12 @@
 
 <img src="screenshots/open-close-nirianim.gif" width="50%" alt="Open/Close"><img src="screenshots/resize-window-nirianim.gif" width="50%" alt="Resize">
 
+<details>
+  <summary><b>Click to expand</b></summary>
+  <br>
+<video src="https://github.com/user-attachments/assets/ccbc541b-0e60-437a-b24a-80c1de2ce78b" controls></video>
+</details>
+
 ---
 
 ## Features
